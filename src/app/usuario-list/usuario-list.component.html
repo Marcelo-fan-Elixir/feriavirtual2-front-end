@@ -1,0 +1,17 @@
+<h2> Lista de Usuario </h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> Nombre </th>
+            <th> E-mail </th>
+            <th> Telefono </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let usuario of usuarios">
+            <td> {{ usuario.nombreUsuario }} </td>
+            <td> {{ usuario.emailUsuario }} </td>
+            <td> {{ usuario.telefonoUsuario }} </td>
+        </tr>
+    </tbody>
+</table>
