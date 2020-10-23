@@ -5,11 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsuarioListComponent } from './usuario-list/usuario-list.component';
 import { CreateUsuarioComponent } from './create-usuario/create-usuario.component';
-
-// import { CreateEmployeeComponent } from './create-employee/create-employee.component';
-// import { FormsModule} from '@angular/forms';
-// import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
-// import { EmployeeDetailsComponent } from './employee-details/employee-details.component'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +16,8 @@ import { CreateUsuarioComponent } from './create-usuario/create-usuario.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -15,4 +15,9 @@ export class UsuarioService {
   getUsuariosList(): Observable<Usuario[]>{
     return this.httpClient.get<Usuario[]>(`${this.baseURL}`);
   }
+
+  createUsuario(usuario: Usuario): Observable<Object>{
+    return this.httpClient.post(`${this.baseURL}`, usuario);
+  }
+
 }

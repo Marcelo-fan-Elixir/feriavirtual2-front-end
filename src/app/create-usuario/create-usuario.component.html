@@ -1,1 +1,43 @@
-<p>create-usuario works!</p>
+<div class="col-md-6 offset-md-3">
+<h3> Crear Usuario</h3>
+<form (ngSubmit) = "onSubmit()">
+    <div class="form-group">
+        <label> RUT </label>
+        <input type="text" class="form-control" id="rutUsuario"
+            [(ngModel)] = "usuario.rutUsuario" name = "rutUsuario">
+    </div>
+
+    <div class="form-group">
+        <label> DV </label>
+        <input type="text" class="form-control" id="dvUsuario"
+            [(ngModel)] = "usuario.dvUsuario" name = "dvUsuario">
+    </div>
+
+    <div class="form-group">
+        <label> NOMBRE </label>
+        <input type="text" class="form-control" id="nombreUsuario"
+            [(ngModel)] = "usuario.nombreUsuario" name = "nombreUsuario">
+    </div>
+
+    <div class="form-group">
+        <label> DIRECCIÓN </label>
+        <input type="text" class="form-control" id="rutUsuario"
+            [(ngModel)] = "usuario.direccionUsuario" name = "direccionUsuario">
+    </div>
+
+    <div class="form-group">
+        <label> TELEFONO </label>
+        <input type="text" class="form-control" id="telefonoUsuario"
+            [(ngModel)] = "usuario.telefonoUsuario" name = "telefonoUsuario">
+    </div>
+
+    <div class="form-group">
+        <label> EMAIL </label>
+        <input type="text" class="form-control" id="emailUsuario"
+            [(ngModel)] = "usuario.emailUsuario" name = "emailUsuario">
+    </div>
+
+    <button class = "btn btn-success" type ="submit">Submit</button>
+
+</form>
+</div>
